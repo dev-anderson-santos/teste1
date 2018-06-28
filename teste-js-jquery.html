@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<button id="trocaDia">Mudar dia</button>
+
+	<table>
+		<tr>
+			<th>Dia</th>
+			<th>Mês</th>
+			<th>Ano</th>
+		</tr>
+		<tr>
+			<td id="dia">28</td>
+			<td id="mes">Junho</td>
+			<td id="ano">2018</td>
+		</tr>		
+	</table>
+	
+	<script>	
+
+		let $ = document.querySelector.bind(document);
+		let dia = $("table #dia");
+		let btnDia = $("#trocaDia");
+
+		btnDia.addEventListener("click", () => {
+
+			let d = prompt("Informe o dia correto: ", "");
+			dia.textContent = d;			
+		});
+	</script>
+</body>
+
+
+</html>
